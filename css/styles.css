@@ -11,6 +11,8 @@
   --gamesScreen:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/screens/gools-and-gunkheads/gools-background.png");
+
+  --quantico: "Quantico", sans-serif;
 }
 
 * {
@@ -30,6 +32,7 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
+  font-family: var(--quantico);
 }
 
 .wrapper {
@@ -81,6 +84,7 @@ header nav .links a {
   color: var(--white);
   font-size: 1.2rem;
   transition: all 0.2s ease-in-out;
+  font-family: var(--quantico);
 }
 
 header nav .links a:hover {
@@ -115,7 +119,9 @@ header nav .links a:hover {
 
 .hero-subtitle {
   color: var(--white);
-  font-size: 1.5rem;
+  width: 50%;
+  font-size: 1.8rem;
+  font-family: var(--quantico);
 }
 
 .hero-button {
@@ -128,12 +134,12 @@ header nav .links a:hover {
   font-size: 1.5rem;
   text-transform: uppercase;
   border: 5px solid var(--pink);
+  font-family: var(--quantico);
 }
 
 .hero-button:hover {
   transition: all 0.2s ease-in-out;
   background-color: var(--pink);
-  font-size: 1.6rem;
   cursor: pointer;
 }
 
@@ -290,6 +296,7 @@ footer .links a {
   color: var(--white);
   font-size: 1.2rem;
   transition: all 0.2s ease-in-out;
+  font-family: var(--quantico);
 }
 
 footer .links a:hover {
