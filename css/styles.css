@@ -133,6 +133,8 @@ header nav .links a:hover {
   color: var(--white);
   font-size: 1.5rem;
   text-transform: uppercase;
+  text-align: center;
+  padding: 12px 0;
   border: 5px solid var(--pink);
   font-family: var(--quantico);
 }
@@ -247,8 +249,27 @@ header nav .links a:hover {
   padding-top: 50px;
 }
 
+#travellin-sweet-link {
+  text-decoration: none;
+  font-family: var(--quantico);
+}
+
 #hands-of-fake .game-thumb {
   background-image: url("../assets/thumbs/hands-of-fake/handsoffake-thumb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#space-gummy .game-logo {
+  background-image: url("../assets/logos/space-gummy-bears/space-gummy-logo.png");
+  background-size: 90% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#space-gummy .game-thumb {
+  background-image: url("../assets/screens/space-gummy-bears/space-gummy-screen.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -327,6 +348,14 @@ footer .links a:hover {
 }
 
 .itch {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  /* background-color: var(--white); */
+}
+
+.tumblr {
   width: 30px;
   height: 30px;
   cursor: pointer;
