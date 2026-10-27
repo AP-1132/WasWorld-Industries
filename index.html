@@ -8,11 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"
+      defer
+    ></script>
+    <script src="app/app.js" defer></script>
   </head>
   <header>
     <div class="wrapper">
@@ -31,7 +44,84 @@
     </div>
   </header>
   <body>
-    <section class="hero-screen">
+    <section class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <section class="hero-screen-CornPopper">
+              <div class="wrapper">
+                <div class="hero">
+                  <img
+                    class="hero-logo-CornPopper"
+                    src="assets/logos/cornpopper/cornpopper-logo.png"
+                    alt="Corn Popper logo"
+                  />
+                  <div class="hero-subtitle">
+                    You like popcorn? Well, then get to poppin!
+                  </div>
+                  <a
+                    href="https://wasworldindustries.itch.io/the-corn-popper"
+                    target="_blank"
+                    class="hero-button"
+                  >
+                    Play Now
+                  </a>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="splide__slide">
+            <section class="hero-screen-GhoolsAndGunkheads">
+              <div class="wrapper">
+                <div class="hero">
+                  <img
+                    class="hero-logo-GhoolsAndGunkheads"
+                    src="assets/logos/gools-and-gunkheads/ghools-logo.png"
+                    alt="Ghools and Gunkheads logo"
+                  />
+                  <div class="hero-subtitle">
+                    Take on Cryptids of the night as Bayou Hillbilly!
+                  </div>
+                  <a
+                    href="https://wasworldindustries.itch.io/ghools-gunkheads"
+                    target="_blank"
+                    class="hero-button"
+                  >
+                    Play Now
+                  </a>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="splide__slide">
+            <section class="hero-screen-HandsOfFake">
+              <div class="wrapper">
+                <div class="hero">
+                  <img
+                    class="hero-logo-HandsOfFake"
+                    src="assets/logos/hands-of-fake/handsoffake-logo.gif"
+                    alt="Hands of Fake logo"
+                  />
+                  <div class="hero-subtitle">
+                    Goat, Rabbit, Crow. Choose wisely, your escape depends on
+                    it.
+                  </div>
+                  <a
+                    href="https://wasworldindustries.itch.io/hands-of-fake"
+                    target="_blank"
+                    class="hero-button"
+                  >
+                    Play Now
+                  </a>
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="hero-screen">
       <div class="wrapper">
         <div class="hero">
           <img
@@ -51,7 +141,7 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="games-screen" id="games">
       <div class="wrapper">
         <h2 class="games-title">WasWorld Games</h2>

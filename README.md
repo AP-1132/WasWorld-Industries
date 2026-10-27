@@ -13,3 +13,5 @@
 [Instagram](https://iconscout.com/icons/instagram) by [Icon Mafia](https://iconscout.com/contributors/icon-mafia)
 
 [Tumblr](https://iconscout.com/icons/tumblr) by [Pixel Icons](https://iconscout.com/contributors/pixel-icons)
+
+[Splide.js](https://splidejs.com/)

@@ -1,13 +1,19 @@
 :root {
   --black: #000;
-  --blackTransparent: #0000008c;
+  --blackTransparent: #000000c4;
   --white: #fff;
   --pink: #fb04ff;
 
   --heroLogo: url("../assets/logos/cornpopper/cornpopper-logo.png");
-  --heroScreen:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  --heroScreen-CornPopper:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/screens/corn-popper/corn-popper-screen.png");
+  --heroScreen-GhoolsAndGunkheads:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/screens/gools-and-gunkheads/GhoolsScreen.png");
+  --heroScreen-HandsOfFake:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/screens/hands-of-fake/hof-screen.png");
   --gamesScreen:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/screens/gools-and-gunkheads/gools-background.png");
@@ -45,7 +51,7 @@ p {
 
 header {
   background-color: var(--blackTransparent);
-  height: 6vh;
+  height: 8vh;
   min-height: 60px;
   width: 100%;
   display: flex;
@@ -65,7 +71,7 @@ nav {
 
 .logo {
   /* background-color: var(--pink); */
-  height: 50%;
+  height: 40%;
   min-height: 30px;
   display: flex;
   align-items: center;
@@ -82,17 +88,18 @@ nav {
 header nav .links a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.2rem;
-  transition: all 0.2s ease-in-out;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
   font-family: var(--quantico);
 }
 
 header nav .links a:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
-.hero-screen {
-  background-image: var(--heroScreen);
+.hero-screen-CornPopper {
+  background-image: var(--heroScreen-CornPopper);
   background-size: cover;
   background-position: 100% 20%;
   background-repeat: no-repeat;
@@ -101,25 +108,70 @@ header nav .links a:hover {
   min-height: 600px;
 }
 
+.hero-screen-GhoolsAndGunkheads {
+  background-image: var(--heroScreen-GhoolsAndGunkheads);
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  min-height: 600px;
+}
+
+.hero-screen-HandsOfFake {
+  background-image: var(--heroScreen-HandsOfFake);
+  background-size: cover;
+  background-position: 100% 20%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  min-height: 600px;
+}
+
+/* .hero {
+  width: 70%;
+  background-color: yellow;
+  height: 50vh;
+  min-height: 400px;
+  display: grid;
+  gap: 20px;
+  padding-top: 15%;
+} */
+
 .hero {
-  width: 50%;
+  width: 70%;
   /* background-color: yellow; */
   height: 40vh;
   min-height: 400px;
-  display: grid;
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding-top: 15%;
 }
 
-.hero-logo {
+.hero-logo-CornPopper {
   /* background-color: lemonchiffon; */
-  height: 83px;
-  min-width: 600px;
+  min-height: 83px;
+  max-height: 200px;
+  width: 600px;
+}
+
+.hero-logo-GhoolsAndGunkheads {
+  /* background-color: lemonchiffon; */
+  max-height: 200px;
+  width: 600px;
+}
+
+.hero-logo-HandsOfFake {
+  /* background-color: lemonchiffon; */
+  max-height: 200px;
+  width: 600px;
 }
 
 .hero-subtitle {
   color: var(--white);
   width: 50%;
+  min-width: 300px;
   font-size: 1.8rem;
   font-family: var(--quantico);
 }
@@ -156,14 +208,24 @@ header nav .links a:hover {
 }
 
 .games-title {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-top: 90px;
+  font-weight: 900;
   color: var(--white);
 }
 
-.games-container {
+/* .games-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  padding-bottom: 70px;
+} */
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   margin-top: 50px;
   padding-bottom: 70px;
@@ -315,13 +377,15 @@ footer .wrapper {
 footer .links a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+
   transition: all 0.2s ease-in-out;
   font-family: var(--quantico);
 }
 
 footer .links a:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 .instagram {
@@ -361,4 +425,23 @@ footer .links a:hover {
   cursor: pointer;
 
   /* background-color: var(--white); */
+}
+
+/* splide styling */
+
+.splide__pagination {
+  bottom: 20px;
+  width: 100%;
+}
+
+.splide__pagination__page {
+  width: 20vw;
+  border-radius: 0;
+  margin: 0 10px;
+}
+
+.splide__pagination__page.is-active {
+  background: var(--pink);
+  opacity: 1;
+  transform: none;
 }
