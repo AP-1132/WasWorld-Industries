@@ -138,7 +138,7 @@ header nav .links a:hover {
   padding-top: 15%;
 } */
 
-.hero {
+.cornPopper-hero {
   width: 70%;
   /* background-color: yellow; */
   height: 40vh;
@@ -147,6 +147,28 @@ header nav .links a:hover {
   flex-direction: column;
   gap: 30px;
   padding-top: 15%;
+}
+
+.ghoolsAndGunkheads-hero {
+  width: 70%;
+  /* background-color: yellow; */
+  height: 40vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 7%;
+}
+
+.handsOfFake-hero {
+  width: 70%;
+  /* background-color: yellow; */
+  height: 40vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 8%;
 }
 
 .hero-logo-CornPopper {
