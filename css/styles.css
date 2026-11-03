@@ -12,13 +12,22 @@
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/screens/gools-and-gunkheads/GhoolsScreen.png");
   --heroScreen-HandsOfFake:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/screens/hands-of-fake/hof-screen.png");
   --gamesScreen:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/screens/gools-and-gunkheads/gools-background.png");
+}
 
-  --quantico: "Quantico", sans-serif;
+@font-face {
+  font-family: "Quantico";
+  src: url("../assets/fonts/Quantico/Quantico-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina Solid";
+  src: url("../assets/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf")
+    format("truetype");
 }
 
 * {
@@ -38,7 +47,7 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
-  font-family: var(--quantico);
+  font-family: "Quantico";
 }
 
 .wrapper {
@@ -88,10 +97,10 @@ nav {
 header nav .links a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 400;
   transition: all 0.1s ease-in-out;
-  font-family: var(--quantico);
+  font-family: "Londrina Solid", sans-serif;
 }
 
 header nav .links a:hover {
@@ -195,7 +204,7 @@ header nav .links a:hover {
   width: 50%;
   min-width: 300px;
   font-size: 1.8rem;
-  font-family: var(--quantico);
+  font-family: "Quantico";
 }
 
 .hero-button {
@@ -205,12 +214,12 @@ header nav .links a:hover {
   background-color: var(--black);
   border-radius: 50px;
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
   padding: 12px 0;
   border: 5px solid var(--pink);
-  font-family: var(--quantico);
+  font-family: "Londrina Solid", sans-serif;
 }
 
 .hero-button:hover {
@@ -230,10 +239,11 @@ header nav .links a:hover {
 }
 
 .games-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding-top: 90px;
   font-weight: 900;
   color: var(--white);
+  font-family: "Londrina Solid", sans-serif;
 }
 
 /* .games-container {
@@ -322,10 +332,10 @@ header nav .links a:hover {
 }
 
 #travellin-sweet .game-logo {
-  /* background-image: url("../assets/logos/gools-and-gunkheads/ghools-logo.png");
-  background-size: 90% auto;
+  background-image: url("../assets/logos/travellin-sweet/Graffiti_Splash_Logo.webp");
+  background-size: 80% auto;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 
   font-size: 2rem;
   color: var(--white);
@@ -335,7 +345,7 @@ header nav .links a:hover {
 
 #travellin-sweet-link {
   text-decoration: none;
-  font-family: var(--quantico);
+  font-family: "Quantico";
 }
 
 #hands-of-fake .game-thumb {
@@ -360,7 +370,7 @@ header nav .links a:hover {
 }
 
 #hands-of-fake .game-logo {
-  background-image: url("../assets/logos/hands-of-fake/handsoffake-logo.gif");
+  background-image: url("../assets/logos/hands-of-fake/handsoffake-logo-noBackground.gif");
   background-size: 90% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -399,11 +409,11 @@ footer .wrapper {
 footer .links a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 400;
 
   transition: all 0.2s ease-in-out;
-  font-family: var(--quantico);
+  font-family: "Londrina Solid", sans-serif;
 }
 
 footer .links a:hover {
